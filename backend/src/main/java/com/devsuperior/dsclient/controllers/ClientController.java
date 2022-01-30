@@ -73,7 +73,7 @@ public class ClientController {
 	
 	
 	
-	@PutMapping
+	@PutMapping(value = "/{id}")
 	public ResponseEntity<ClientDTO> update(@PathVariable Long id, @RequestBody ClientDTO clientDto){
 		
 		clientDto = clientService.update(id, clientDto);
@@ -83,7 +83,7 @@ public class ClientController {
 	
 	
 	
-	@DeleteMapping
+	@DeleteMapping(value = "/{id}")
 	public ResponseEntity<Void> delete(@PathVariable Long id){
 		
 		clientService.delete(id);
