@@ -20,28 +20,28 @@ public class Client implements Serializable{
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "id_client")
+	@Column(name = "id")
 	private Long id;
 	
-	@Column(name = "nm_client")
+	@Column(name = "name")
 	private String name;
 
-	@Column(name = "cd_cpf")
+	@Column(name = "cpf")
 	private String cpf;
 
-	@Column(name = "vl_income")
+	@Column(name = "income")
 	private Double income;
 
-	@Column(name = "dt_birth")
+	@Column(name = "birth_date")
 	private Instant birthDate;
 
-	@Column(name = "nr_children")
+	@Column(name = "children")
 	private Integer children;
 	
-	@Column(name= "ts_created_at", columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
+	@Column(name= "created_at", columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
 	private Instant createdAt;
 
-	@Column(name= "ts_updated_at", columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
+	@Column(name= "updated_at", columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
 	private Instant updatedAt;
 
 	
